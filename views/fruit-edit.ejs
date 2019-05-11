@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Fruit Edit</h1>
+
+        <form method="POST" action="/fruits/edit/<%= data.id %>">
+            <label>Fruit Name:</label><input type="text" name="name" value="<%= data.name %>" /><br/>
+            <label>Stock:</label><input type="text" name="stock" value="<%= data.stock %>" /><br/>
+            <button type="submit" name="submit">Update</button>
+
+        </form>
+    </body>
+</html>

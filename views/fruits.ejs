@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Fruits</h1>
+        <% data.forEach( element => { %>
+            <a href="/fruits/<%= element.id %>"><p><%= element.name%> : <%=element.stock %></p></a>
+        <% }) %>
+
+        <form method="POST" action="/fruits">
+            <label>Fruit Name:</label><input type="text" name="name" /><br/>
+            <label>Stock:</label><input type="text" name="stock" /><br/>
+            <button type="submit" name="submit">Add</button>
+
+        </form>
+    </body>
+</html>
